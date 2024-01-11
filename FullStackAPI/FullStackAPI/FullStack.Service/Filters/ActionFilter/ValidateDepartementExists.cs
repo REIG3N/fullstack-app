@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using FullStack.Core.Models;
+using FullStack.Service.Interfaces;
+
+namespace FullStack.Service.Filters.ActionFilter
+{
+    public class ValidateDepartementExists : IAsyncActionFilter
+    {
+        private readonly IRepositoryManager _repository;
+        private readonly ILoggerManager _logger;
+
+        public ValidateDepartementExists(IRepositoryManager repository, ILoggerManager logger)
+        {
+            _repository = repository; _logger = logger;
+        }
+
+        public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+        {
+            var trackChanges = context.HttpContext.Request.Method.Equals("PUT")!;
+
+            var id = (int)context.ActionArguments[context.ActionArguments.Keys.Where(x => x.Equals("id") || x.Equals("departementId")).SingleOrDefault()];
+
+            var departement = await _repository.Departement.GetDepartement(id, trackChanges);
+            if (departement is null)
+            {
+                _logger.LogInfo($"Departement with id: {id} doesn't exist in the database.");
+                var response = new ObjectResult(new ResponseModel
+                {
+                    StatusCode = 404,
+                    Message = $"Departement with id: {id} doesn't exist in the database."
+                });
+                context.Result = response;
+            }
+            else
+            {
+                context.HttpContext.Items.Add("departement", departement);
+                await next();
+            }
+        }
+    }
+}

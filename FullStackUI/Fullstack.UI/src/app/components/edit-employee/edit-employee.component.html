@@ -1,0 +1,139 @@
+<div class="container my-5">
+  <a [routerLink]="['/employees']">Go Back</a>
+  <h1 class="mb-3">Edit an employee</h1>
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="updateEmployee()">
+        <div class="mb-3">
+          <div class="mb-3">
+            <label for="name" class="form-label">Id</label>
+            <input
+              type="text"
+              class="form-control"
+              id="id"
+              readonly
+              name="id"
+              [(ngModel)]="employeeDetails.id"
+            />
+          </div>
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            pattern="^[a-zA-Z\s]*$"
+            id="name"
+            required
+            name="name"
+            [(ngModel)]="employeeDetails.name"
+          />
+          <div
+            *ngIf="
+              form.controls['name']?.hasError('pattern') &&
+              form.controls['name']?.touched
+            "
+            class="text-danger"
+          >
+            Name should not contain numbers
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            required
+            email
+            name="email"
+            [(ngModel)]="employeeDetails.email"
+          />
+          <div
+            *ngIf="
+              form.controls['email']?.hasError('email') &&
+              form.controls['email']?.touched
+            "
+            class="text-danger"
+          >
+            Invalid email format
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phone"
+            required
+            pattern="[0-9]{9}"
+            name="phone"
+            [(ngModel)]="employeeDetails.phone"
+          />
+          <div
+            *ngIf="
+              form.controls['phone']?.hasError('pattern') &&
+              form.controls['phone']?.touched
+            "
+            class="text-danger"
+          >
+            Phone must be 10 digits
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="salary" class="form-label">Salary</label>
+          <input
+            type="number"
+            class="form-control"
+            id="salary"
+            min="1000"
+            name="salary"
+            [(ngModel)]="employeeDetails.salary"
+          />
+          <div
+            *ngIf="
+              form.controls['salary']?.hasError('min') &&
+              form.controls['salary']?.touched
+            "
+            class="text-danger"
+          >
+            Salary is not valid
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="departement" class="form-label">Department</label>
+          <input
+            type="text"
+            class="form-control"
+            id="departement"
+            required
+            pattern="^[A-Z]{1,2}$"
+            name="departement"
+            [(ngModel)]="employeeDetails.departement"
+          />
+          <div
+            *ngIf="
+              form.controls['department']?.hasError('pattern') || form.controls['department']?.hasError('max') &&
+              form.controls['department']?.touched 
+            "
+            class="text-danger"
+          >
+            Department should contain 1 to 2 uppercase letters
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+          Save
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="deleteEmployee(employeeDetails.id)"
+        >
+          Delete
+        </button>
+        <div *ngIf="form.invalid" class="text-danger mt-2">
+          Please correct the errors in the form before submitting.
+        </div>
+        <div *ngIf="form.valid" class="text-success mt-2">Form Completed !</div>
+      </form>
+    </div>
+  </div>
+</div>

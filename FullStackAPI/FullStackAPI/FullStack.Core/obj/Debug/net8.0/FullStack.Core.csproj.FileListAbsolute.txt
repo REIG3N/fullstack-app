@@ -1,0 +1,14 @@
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\bin\Debug\net8.0\FullStack.Core.deps.json
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\bin\Debug\net8.0\FullStack.Core.runtimeconfig.json
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\bin\Debug\net8.0\FullStack.Core.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\bin\Debug\net8.0\FullStack.Core.pdb
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.csproj.AssemblyReference.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.AssemblyInfoInputs.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.AssemblyInfo.cs
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.csproj.CoreCompileInputs.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\refint\FullStack.Core.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.pdb
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\FullStack.Core.genruntimeconfig.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Core\obj\Debug\net8.0\ref\FullStack.Core.dll

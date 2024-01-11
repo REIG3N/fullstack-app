@@ -1,0 +1,131 @@
+<div class="container my-5">
+  <h1 class="mb-3">Add new employee</h1>
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="addEmployee()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            pattern="^[a-zA-Z\s]*$"
+            name="name"
+            [(ngModel)]="addEmployeeRequest.name"
+          />
+          <div
+            *ngIf="
+              form.controls['name']?.hasError('pattern') &&
+              form.controls['name']?.touched
+            "
+            class="text-danger"
+          >
+            Name should not contain numbers
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            required
+            email
+            name="email"
+            [(ngModel)]="addEmployeeRequest.email"
+          />
+          <div
+            *ngIf="
+              form.controls['email']?.hasError('email') &&
+              form.controls['email']?.touched
+            "
+            class="text-danger"
+          >
+            Invalid email format
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            required
+            pattern="[0-9]{9}"
+            name="phone"
+            [(ngModel)]="addEmployeeRequest.phone"
+          />
+          <div
+            *ngIf="
+              form.controls['phone']?.hasError('pattern') &&
+              form.controls['phone']?.touched
+            "
+            class="text-danger"
+          >
+            Phone must be 10 digits
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="salary" class="form-label">Salary</label>
+          <input
+            type="number"
+            class="form-control"
+            id="salary"
+            required
+            min="1000"
+            name="salary"
+            [(ngModel)]="addEmployeeRequest.salary"
+          />
+          <div
+            *ngIf="
+              form.controls['salary']?.hasError('min') &&
+              form.controls['salary']?.touched
+            "
+            class="text-danger"
+          >
+            Salary cannot be less than 1000
+          </div>
+          <div
+            *ngIf="
+              form.controls['salary']?.hasError('pattern') &&
+              form.controls['salary']?.touched
+            "
+            class="text-danger"
+          >
+            Please enter a valid number
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="department" class="form-label">Department</label>
+          <input
+            type="text"
+            class="form-control"
+            id="department"
+            required
+            pattern="^[A-Z]{1,2}$"
+            max="2"
+
+            name="department"
+            [(ngModel)]="addEmployeeRequest.departement"
+          />
+          <div
+            *ngIf="
+              form.controls['department']?.hasError('pattern') || form.controls['department']?.hasError('max') &&
+              form.controls['department']?.touched 
+            "
+            class="text-danger"
+          >
+            Department should not contain numbers or exceed 2 letters
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+          Submit
+        </button>
+        <div *ngIf="form.invalid && form.touched" class="text-danger mt-2">
+          Please correct the errors in the form before submitting.
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

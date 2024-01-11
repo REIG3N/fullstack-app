@@ -1,0 +1,17 @@
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Repo.deps.json
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Repo.runtimeconfig.json
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Repo.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Repo.pdb
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Core.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\bin\Debug\net8.0\FullStack.Core.pdb
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.csproj.AssemblyReference.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.AssemblyInfoInputs.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.AssemblyInfo.cs
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.csproj.CoreCompileInputs.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.csproj.CopyComplete
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\refint\FullStack.Repo.dll
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.pdb
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\FullStack.Repo.genruntimeconfig.cache
+C:\Users\r.bardat\Documents\ProjetsTuto\angular-to-dotnet\FullStackAPI\FullStackAPI\FullStack.Repo\obj\Debug\net8.0\ref\FullStack.Repo.dll
